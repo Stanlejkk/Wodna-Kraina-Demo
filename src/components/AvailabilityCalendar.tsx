@@ -82,7 +82,7 @@ export function AvailabilityCalendar({
   const todayStr = `${today.getFullYear()}-${pad(today.getMonth() + 1)}-${pad(today.getDate())}`;
 
   return (
-    <div className="rounded-xl border border-border bg-card/80 p-5">
+    <div className="rounded-lg border border-border bg-card p-5">
       <h4 className="font-heading text-lg font-semibold text-foreground mb-4 text-center">
         {MONTH_NAMES[month]} {year}
       </h4>

@@ -1,14 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0C1A0E;
-  --foreground: #F0EBE0;
-  --primary: #2D6A4F;
-  --primary-light: #40916C;
-  --accent: #C9A84C;
-  --muted: #1A2E1F;
-  --border: #2A3F2E;
-  --card: #121F14;
+  --background: #080C06;
+  --foreground: #EDE8D8;
+  --primary: #1B5535;
+  --primary-light: #27703F;
+  --accent: #C9A535;
+  --accent-light: #DABB4A;
+  --muted: #101408;
+  --border: #1C2818;
+  --card: #0C1208;
 }
 
 @theme inline {
@@ -17,10 +18,11 @@
   --color-primary: var(--primary);
   --color-primary-light: var(--primary-light);
   --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
   --color-muted: var(--muted);
   --color-border: var(--border);
   --color-card: var(--card);
-  --font-heading: "Garamond", "Georgia", "Palatino Linotype", "Book Antiqua", serif;
+  --font-heading: "Georgia", "Palatino Linotype", "Book Antiqua", "Garamond", serif;
   --font-body: "DM Sans", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
@@ -125,7 +127,7 @@ body::before {
 
 .card-hover:hover {
   transform: translateY(-4px) scale(1.01);
-  box-shadow: 0 0 30px rgba(45, 106, 79, 0.2), 0 0 60px rgba(201, 168, 76, 0.05);
+  box-shadow: 0 0 30px rgba(27, 85, 53, 0.25), 0 0 60px rgba(201, 165, 53, 0.08);
 }
 
 /* Water wave effect for hero */

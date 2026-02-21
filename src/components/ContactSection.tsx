@@ -21,11 +21,11 @@ export function ContactSection() {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Contact info + Map */}
       <div className="space-y-6">
-        <div className="p-6 rounded-xl border border-border bg-card/80">
+        <div className="p-6 rounded-lg border border-border bg-card">
           <h3 className="font-heading text-xl font-semibold text-accent mb-4">
             Dane kontaktowe
           </h3>
-          <div className="space-y-3 text-sm text-foreground/70">
+          <div className="space-y-3 text-sm text-foreground/50">
             <p className="flex items-start gap-3">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-accent flex-shrink-0 mt-0.5">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
@@ -51,11 +51,11 @@ export function ContactSection() {
           </div>
         </div>
 
-        <div className="p-6 rounded-xl border border-border bg-card/80">
+        <div className="p-6 rounded-lg border border-border bg-card">
           <h3 className="font-heading text-xl font-semibold text-accent mb-4">
             Godziny otwarcia
           </h3>
-          <div className="space-y-2 text-sm text-foreground/70">
+          <div className="space-y-2 text-sm text-foreground/50">
             <div className="flex justify-between">
               <span>Poniedziałek – Niedziela</span>
               <span className="text-foreground font-medium">08:00 – 21:00</span>
@@ -67,7 +67,7 @@ export function ContactSection() {
           </div>
         </div>
 
-        <div className="rounded-xl overflow-hidden border border-border h-[280px]">
+        <div className="rounded-lg overflow-hidden border border-border h-[280px]">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2500!2d21.36!3d51.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDQzJzQ4LjAiTiAyMcKwMjEnMzYuMCJF!5e0!3m2!1spl!2spl!4v1"
             width="100%"
@@ -82,7 +82,7 @@ export function ContactSection() {
       </div>
 
       {/* Contact Form */}
-      <div className="p-6 lg:p-8 rounded-xl border border-border bg-card/80">
+      <div className="p-6 lg:p-8 rounded-lg border border-border bg-card">
         <h3 className="font-heading text-xl font-semibold text-accent mb-6">
           Napisz do nas
         </h3>
@@ -95,7 +95,7 @@ export function ContactSection() {
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div>
-            <label htmlFor="name" className="block text-sm text-foreground/70 mb-1.5">
+            <label htmlFor="name" className="block text-sm text-foreground/50 mb-1.5">
               Imię i nazwisko
             </label>
             <input
@@ -111,7 +111,7 @@ export function ContactSection() {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm text-foreground/70 mb-1.5">
+            <label htmlFor="email" className="block text-sm text-foreground/50 mb-1.5">
               Email
             </label>
             <input
@@ -127,7 +127,7 @@ export function ContactSection() {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm text-foreground/70 mb-1.5">
+            <label htmlFor="message" className="block text-sm text-foreground/50 mb-1.5">
               Wiadomość
             </label>
             <textarea

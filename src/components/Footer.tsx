@@ -12,18 +12,17 @@ const footerLinks = [
 
 export function Footer() {
   return (
-    <footer className="relative z-[1] border-t border-border bg-card">
+    <footer className="relative z-[1] border-t border-accent/10 bg-card">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & Description */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <span className="text-accent text-2xl">~</span>
-              <span className="font-heading text-2xl font-semibold text-foreground">
+              <span className="font-heading text-2xl font-semibold text-accent tracking-wide">
                 Wodna Kraina
               </span>
             </Link>
-            <p className="text-foreground/60 text-sm leading-relaxed">
+            <p className="text-foreground/50 text-sm leading-relaxed">
               Łowisko wędkarskie w sercu natury. 150 hektarów ciszy,
               25+ lat tradycji, dolina Wisły.
             </p>
@@ -39,7 +38,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+                    className="text-sm text-foreground/50 hover:text-accent transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -53,20 +52,20 @@ export function Footer() {
             <h3 className="font-heading text-lg font-semibold text-accent mb-4">
               Kontakt
             </h3>
-            <div className="space-y-3 text-sm text-foreground/60">
+            <div className="space-y-3 text-sm text-foreground/50">
               <p>ul. Stawowa 9, 08-470 Wilga</p>
               <p>
                 Tel:{" "}
                 <a
                   href="tel:+48512464846"
-                  className="text-foreground hover:text-accent transition-colors"
+                  className="text-foreground/70 hover:text-accent transition-colors"
                 >
                   512 464 846
                 </a>
               </p>
               <p>NIP: 8262217408 (MMW Sp. z o.o.)</p>
               <div className="pt-2">
-                <p className="text-foreground/80 font-medium">Godziny otwarcia:</p>
+                <p className="text-foreground/70 font-medium">Godziny otwarcia:</p>
                 <p>Pn-Nd: 08:00 - 21:00</p>
                 <p>Dla karpiarzy: 24h</p>
               </div>
@@ -76,10 +75,10 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-10 pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-foreground/40">
+          <p className="text-xs text-foreground/30">
             &copy; 2026 MMW Sp. z o.o. Wszelkie prawa zastrzeżone.
           </p>
-          <p className="text-xs text-foreground/40">
+          <p className="text-xs text-foreground/30">
             Wodna Kraina &ndash; Łowisko Wędkarskie, Wilga
           </p>
         </div>

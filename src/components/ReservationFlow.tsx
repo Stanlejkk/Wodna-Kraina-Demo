@@ -176,7 +176,7 @@ export function ReservationFlow() {
               <button
                 key={lake.id}
                 onClick={() => handleSelectLake(lake.id)}
-                className="card-hover p-6 rounded-xl border border-border bg-card/80 text-left hover:border-accent/50 transition-all"
+                className="card-hover p-6 rounded-lg border border-border bg-card text-left hover:border-accent/50 transition-all"
               >
                 <span className="text-3xl mb-3 block">{lake.icon}</span>
                 <h4 className="font-heading text-lg font-semibold text-foreground mb-1">
@@ -206,10 +206,10 @@ export function ReservationFlow() {
                 <button
                   key={spot.id}
                   onClick={() => handleSelectSpot(spot)}
-                  className={`p-4 rounded-xl border text-left transition-all ${
+                  className={`p-4 rounded-lg border text-left transition-all ${
                     occupied
                       ? "border-red-800/30 bg-red-900/10 opacity-50"
-                      : "border-border bg-card/80 hover:border-accent/50 card-hover"
+                      : "border-border bg-card hover:border-accent/50 card-hover"
                   }`}
                 >
                   <div className="flex items-center justify-between mb-2">
@@ -247,7 +247,7 @@ export function ReservationFlow() {
             <div className="flex items-center justify-between mb-4">
               <button
                 onClick={handlePrevMonth}
-                className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-foreground/60 transition-colors"
+                className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-foreground/50 transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M10 4l-4 4 4 4" />
@@ -255,7 +255,7 @@ export function ReservationFlow() {
               </button>
               <button
                 onClick={handleNextMonth}
-                className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-foreground/60 transition-colors"
+                className="p-2 rounded-lg bg-muted hover:bg-muted/80 text-foreground/50 transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M6 4l4 4-4 4" />
@@ -297,7 +297,7 @@ export function ReservationFlow() {
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label className="block text-sm text-foreground/70 mb-1.5">Imię</label>
+                <label className="block text-sm text-foreground/50 mb-1.5">Imię</label>
                 <input
                   type="text"
                   value={formData.firstName}
@@ -310,7 +310,7 @@ export function ReservationFlow() {
                 )}
               </div>
               <div>
-                <label className="block text-sm text-foreground/70 mb-1.5">Nazwisko</label>
+                <label className="block text-sm text-foreground/50 mb-1.5">Nazwisko</label>
                 <input
                   type="text"
                   value={formData.lastName}
@@ -325,7 +325,7 @@ export function ReservationFlow() {
             </div>
 
             <div>
-              <label className="block text-sm text-foreground/70 mb-1.5">Telefon</label>
+              <label className="block text-sm text-foreground/50 mb-1.5">Telefon</label>
               <input
                 type="tel"
                 value={formData.phone}
@@ -339,7 +339,7 @@ export function ReservationFlow() {
             </div>
 
             <div>
-              <label className="block text-sm text-foreground/70 mb-1.5">Email</label>
+              <label className="block text-sm text-foreground/50 mb-1.5">Email</label>
               <input
                 type="email"
                 value={formData.email}
@@ -353,7 +353,7 @@ export function ReservationFlow() {
             </div>
 
             <div>
-              <label className="block text-sm text-foreground/70 mb-1.5">Liczba osób</label>
+              <label className="block text-sm text-foreground/50 mb-1.5">Liczba osób</label>
               <select
                 value={formData.persons}
                 onChange={(e) => setFormData((p) => ({ ...p, persons: e.target.value }))}
@@ -386,52 +386,52 @@ export function ReservationFlow() {
             Podsumowanie rezerwacji
           </h3>
 
-          <div className="rounded-xl border border-border bg-card/80 p-6 space-y-4">
+          <div className="rounded-lg border border-border bg-card p-6 space-y-4">
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Akwen</span>
+              <span className="text-foreground/50">Akwen</span>
               <span className="text-foreground font-medium">
                 {getLakeLabel(selectedLake!)}
               </span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Stanowisko</span>
+              <span className="text-foreground/50">Stanowisko</span>
               <span className="text-foreground font-medium">{selectedSpot.name}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Termin</span>
+              <span className="text-foreground/50">Termin</span>
               <span className="text-foreground font-medium">
                 {formatDate(dateFrom)} – {dateTo ? formatDate(dateTo) : formatDate(dateFrom)}
               </span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Liczba dób</span>
+              <span className="text-foreground/50">Liczba dób</span>
               <span className="text-foreground font-medium">{totalDays}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Cena za dobę</span>
+              <span className="text-foreground/50">Cena za dobę</span>
               <span className="text-foreground font-medium">
                 {selectedSpot.pricePerDay} zł
               </span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Osób</span>
+              <span className="text-foreground/50">Osób</span>
               <span className="text-foreground font-medium">{formData.persons}</span>
             </div>
 
             <hr className="border-border" />
 
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Rezerwujący</span>
+              <span className="text-foreground/50">Rezerwujący</span>
               <span className="text-foreground font-medium">
                 {formData.firstName} {formData.lastName}
               </span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Telefon</span>
+              <span className="text-foreground/50">Telefon</span>
               <span className="text-foreground font-medium">{formData.phone}</span>
             </div>
             <div className="flex justify-between text-sm">
-              <span className="text-foreground/60">Email</span>
+              <span className="text-foreground/50">Email</span>
               <span className="text-foreground font-medium">{formData.email}</span>
             </div>
 
@@ -461,7 +461,7 @@ export function ReservationFlow() {
           onClick={() => setShowPaymentModal(false)}
         >
           <div
-            className="bg-card border border-border rounded-xl max-w-md w-full p-8 text-center"
+            className="bg-card border border-border rounded-lg max-w-md w-full p-8 text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="w-16 h-16 rounded-full bg-accent/20 flex items-center justify-center mx-auto mb-4">
@@ -473,7 +473,7 @@ export function ReservationFlow() {
             <h3 className="font-heading text-2xl font-semibold text-foreground mb-2">
               Wersja Demo
             </h3>
-            <p className="text-foreground/60 text-sm mb-6">
+            <p className="text-foreground/50 text-sm mb-6">
               W wersji produkcyjnej nastąpi przekierowanie do systemu płatności
               PayU. Kwota do zapłaty: <span className="text-accent font-bold">{totalPrice} zł</span>
             </p>
