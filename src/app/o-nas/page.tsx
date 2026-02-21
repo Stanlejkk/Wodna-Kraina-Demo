@@ -18,12 +18,12 @@ export default function ONasPage() {
     <>
       {/* Hero */}
       <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24 px-4">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#060E07] via-background to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#030602] via-[#060A04] to-background" />
         <div className="relative z-10 max-w-4xl mx-auto text-center">
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground mb-4">
             O <span className="text-accent">Nas</span>
           </h1>
-          <p className="text-foreground/60 text-lg max-w-2xl mx-auto">
+          <p className="text-foreground/50 text-lg max-w-2xl mx-auto">
             Ponad 25 lat pasji, natury i wielkich ryb
           </p>
         </div>
@@ -37,7 +37,7 @@ export default function ONasPage() {
               <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
                 Historia <span className="text-accent">Wodnej Krainy</span>
               </h2>
-              <div className="space-y-4 text-foreground/70 leading-relaxed">
+              <div className="space-y-4 text-foreground/50 leading-relaxed">
                 <p>
                   Przez ponad 25 lat w chronionych stawach wytworzyły się populacje
                   dużych osobników. To, co zaczynało się jako marzenie o idealnym
@@ -70,7 +70,7 @@ export default function ONasPage() {
             <h2 className="font-heading text-3xl font-bold text-foreground mb-6">
               Kompleks <span className="text-accent">rekreacyjny</span>
             </h2>
-            <div className="space-y-4 text-foreground/70 leading-relaxed">
+            <div className="space-y-4 text-foreground/50 leading-relaxed">
               <p>
                 Wodna Kraina to nie tylko łowisko. To cały kompleks rekreacyjny
                 idealny dla rodzin i grup przyjaciół. Oprócz trzech akwenów
@@ -108,11 +108,11 @@ export default function ONasPage() {
       <section className="py-16 lg:py-24 px-4">
         <div className="max-w-4xl mx-auto">
           <ScrollFadeIn>
-            <div className="p-8 lg:p-12 rounded-xl border border-accent/20 bg-accent/5 text-center">
+            <div className="p-8 lg:p-12 rounded-lg border border-accent/20 bg-accent/5 text-center">
               <h2 className="font-heading text-3xl font-bold text-accent mb-4">
                 Złów i Wypuść
               </h2>
-              <p className="text-foreground/70 max-w-2xl mx-auto leading-relaxed">
+              <p className="text-foreground/50 max-w-2xl mx-auto leading-relaxed">
                 Nasza najważniejsza zasada. Wszystkie ryby muszą być wypuszczone
                 z powrotem do wody. Dzięki temu populacje rosną, a każdy kolejny
                 wędkarz ma szansę na jeszcze większe trofeum. Mata karpiowa
@@ -129,11 +129,11 @@ export default function ONasPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {stats.map((stat, index) => (
               <ScrollFadeIn key={stat.label} delay={0.1 * (index + 1)}>
-                <div className="text-center p-8 rounded-xl border border-border bg-card/80">
+                <div className="text-center p-8 rounded-lg border border-border bg-card">
                   <div className="font-heading text-4xl lg:text-5xl font-bold text-accent mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-foreground/60 text-sm uppercase tracking-wider">
+                  <div className="text-foreground/50 text-sm uppercase tracking-wider">
                     {stat.label}
                   </div>
                 </div>

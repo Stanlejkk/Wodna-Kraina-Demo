@@ -48,7 +48,7 @@ export function GalleryGrid() {
             className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
               filter === cat
                 ? "bg-accent text-background"
-                : "bg-muted text-foreground/60 hover:text-foreground hover:bg-muted/80"
+                : "bg-muted text-foreground/50 hover:text-foreground hover:bg-muted/80"
             }`}
           >
             {cat}
@@ -66,7 +66,7 @@ export function GalleryGrid() {
             <ScrollFadeIn key={item.id} delay={0.05 * (index + 1)}>
               <button
                 onClick={() => setLightbox(item)}
-                className={`card-hover block w-full ${height} rounded-xl border border-border bg-gradient-to-br ${item.gradient} overflow-hidden relative group cursor-pointer text-left`}
+                className={`card-hover block w-full ${height} rounded-lg border border-border bg-gradient-to-br ${item.gradient} overflow-hidden relative group cursor-pointer text-left`}
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   <span className="text-6xl opacity-30 group-hover:opacity-50 transition-opacity group-hover:scale-110 transition-transform duration-300">
@@ -94,7 +94,7 @@ export function GalleryGrid() {
           onClick={() => setLightbox(null)}
         >
           <div
-            className="bg-card border border-border rounded-xl max-w-lg w-full p-8 text-center"
+            className="bg-card border border-border rounded-lg max-w-lg w-full p-8 text-center"
             onClick={(e) => e.stopPropagation()}
           >
             <span className="text-8xl mb-4 block">{lightbox.icon}</span>

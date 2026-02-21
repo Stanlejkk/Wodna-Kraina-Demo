@@ -14,7 +14,7 @@ export function RegulaminAccordion() {
         return (
           <div
             key={section.id}
-            className="rounded-xl border border-border bg-card/80 overflow-hidden"
+            className="rounded-lg border border-border bg-card overflow-hidden"
           >
             <button
               onClick={() => setOpenSection(isOpen ? null : section.id)}
