@@ -7,16 +7,16 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background layers */}
       <div className="absolute inset-0">
-        {/* Base dark gradient - deeper, warmer */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[#030602] via-[#060A04] to-background" />
+        {/* Base light gradient */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/10 via-primary/5 to-background" />
 
         {/* Subtle forest atmosphere */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-40">
           <div
             className="absolute top-[15%] left-0 right-0 h-[300px] wave-bg"
             style={{
               background:
-                "radial-gradient(ellipse 100% 80% at 50% 50%, rgba(27,85,53,0.2) 0%, transparent 70%)",
+                "radial-gradient(ellipse 100% 80% at 50% 50%, rgba(27,85,53,0.08) 0%, transparent 70%)",
             }}
           />
         </div>
@@ -27,12 +27,12 @@ export function HeroSection() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(to top, rgba(27,85,53,0.06) 0%, transparent 50%)",
+                "linear-gradient(to top, rgba(27,85,53,0.04) 0%, transparent 50%)",
             }}
           />
           {/* Subtle wave lines */}
           <svg
-            className="absolute bottom-[15%] left-0 w-full opacity-[0.05]"
+            className="absolute bottom-[15%] left-0 w-full opacity-[0.12]"
             viewBox="0 0 1440 60"
             preserveAspectRatio="none"
           >
@@ -45,7 +45,7 @@ export function HeroSection() {
             <path
               d="M0 40 Q 180 10 360 40 Q 540 70 720 40 Q 900 10 1080 40 Q 1260 70 1440 40"
               fill="none"
-              stroke="#C9A535"
+              stroke="#96790F"
               strokeWidth="0.5"
             />
           </svg>
@@ -53,17 +53,17 @@ export function HeroSection() {
 
         {/* Warm golden ambient glow */}
         <div
-          className="absolute top-[25%] left-[15%] w-[500px] h-[500px] rounded-full opacity-[0.03]"
+          className="absolute top-[25%] left-[15%] w-[500px] h-[500px] rounded-full opacity-[0.06]"
           style={{
             background:
-              "radial-gradient(circle, rgba(201,165,53,0.4) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(150,121,15,0.3) 0%, transparent 70%)",
           }}
         />
         <div
-          className="absolute top-[35%] right-[20%] w-[300px] h-[300px] rounded-full opacity-[0.02]"
+          className="absolute top-[35%] right-[20%] w-[300px] h-[300px] rounded-full opacity-[0.04]"
           style={{
             background:
-              "radial-gradient(circle, rgba(27,85,53,0.5) 0%, transparent 70%)",
+              "radial-gradient(circle, rgba(27,85,53,0.3) 0%, transparent 70%)",
           }}
         />
       </div>

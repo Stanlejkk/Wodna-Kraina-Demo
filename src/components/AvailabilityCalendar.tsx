@@ -120,7 +120,7 @@ export function AvailabilityCalendar({
               className={`
                 aspect-square flex items-center justify-center rounded-lg text-sm font-medium transition-all
                 ${isPast ? "text-foreground/20 cursor-default" : ""}
-                ${isOccupied ? "bg-red-900/30 text-red-400 cursor-not-allowed" : ""}
+                ${isOccupied ? "bg-red-100 text-red-600 cursor-not-allowed" : ""}
                 ${isSelectable && !selected ? "bg-primary/15 text-primary-light hover:bg-primary/30 cursor-pointer" : ""}
                 ${selected ? "bg-accent text-background font-bold" : ""}
               `}
@@ -139,7 +139,7 @@ export function AvailabilityCalendar({
           Wolne
         </div>
         <div className="flex items-center gap-1.5">
-          <div className="w-3 h-3 rounded bg-red-900/30 border border-red-800/30" />
+          <div className="w-3 h-3 rounded bg-red-100 border border-red-200" />
           Zajęte
         </div>
         <div className="flex items-center gap-1.5">

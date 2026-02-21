@@ -15,7 +15,7 @@ export function LakeCard({ lake, index }: LakeCardProps) {
       {/* Header with gradient */}
       <div className="relative h-32 rounded-md mb-4 overflow-hidden flex items-center justify-center"
         style={{
-          background: `linear-gradient(135deg, rgba(27,85,53,0.15) 0%, rgba(8,12,6,0.9) 100%)`,
+          background: `linear-gradient(135deg, rgba(27,85,53,0.1) 0%, rgba(240,244,237,0.9) 100%)`,
         }}
       >
         <span className="text-4xl">{lake.icon}</span>

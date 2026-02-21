@@ -208,7 +208,7 @@ export function ReservationFlow() {
                   onClick={() => handleSelectSpot(spot)}
                   className={`p-4 rounded-lg border text-left transition-all ${
                     occupied
-                      ? "border-red-800/30 bg-red-900/10 opacity-50"
+                      ? "border-red-200 bg-red-50 opacity-60"
                       : "border-border bg-card hover:border-accent/50 card-hover"
                   }`}
                 >
@@ -220,7 +220,7 @@ export function ReservationFlow() {
                   </div>
                   <p className="text-xs text-foreground/50">{spot.description}</p>
                   {occupied && (
-                    <p className="text-xs text-red-400 mt-1">Aktualnie zajęte</p>
+                    <p className="text-xs text-red-600 mt-1">Aktualnie zajęte</p>
                   )}
                 </button>
               );
