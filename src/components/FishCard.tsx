@@ -10,13 +10,13 @@ export function FishCard({ fish, variant = "small" }: FishCardProps) {
 
   return (
     <div
-      className={`card-hover rounded-xl border border-border bg-card/80 overflow-hidden ${
+      className={`card-hover flex flex-col h-full rounded-xl border border-border bg-card/80 overflow-hidden ${
         isLarge ? "p-6 lg:p-8" : "p-5"
       }`}
     >
       {/* Fish icon area */}
       <div
-        className={`relative rounded-lg mb-4 flex items-center justify-center ${
+        className={`relative rounded-lg mb-4 flex items-center justify-center shrink-0 ${
           isLarge ? "h-40" : "h-28"
         }`}
         style={{
@@ -61,7 +61,7 @@ export function FishCard({ fish, variant = "small" }: FishCardProps) {
         {fish.minWeight} – {fish.maxWeight} kg
       </p>
 
-      <p className={`text-foreground/60 leading-relaxed ${isLarge ? "text-sm" : "text-xs"}`}>
+      <p className={`text-foreground/60 leading-relaxed flex-1 ${isLarge ? "text-sm" : "text-xs"}`}>
         {fish.description}
       </p>
     </div>
