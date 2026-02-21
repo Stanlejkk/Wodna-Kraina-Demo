@@ -20,7 +20,7 @@ export function FishCard({ fish, variant = "small" }: FishCardProps) {
           isLarge ? "h-40" : "h-28"
         }`}
         style={{
-          background: `linear-gradient(135deg, ${fish.color}12 0%, rgba(8,12,6,0.9) 100%)`,
+          background: `linear-gradient(135deg, ${fish.color}15 0%, rgba(240,244,237,0.9) 100%)`,
         }}
       >
         {/* SVG fish silhouette */}

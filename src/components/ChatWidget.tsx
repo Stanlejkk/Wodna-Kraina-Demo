@@ -91,13 +91,13 @@ export function ChatWidget() {
 
       {/* Chat window */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-[340px] sm:w-[380px] max-h-[500px] rounded-lg border border-border bg-card shadow-2xl shadow-black/40 flex flex-col overflow-hidden">
+        <div className="fixed bottom-24 right-6 z-50 w-[340px] sm:w-[380px] max-h-[500px] rounded-lg border border-border bg-card shadow-2xl shadow-black/10 flex flex-col overflow-hidden">
           {/* Header */}
           <div className="px-4 py-3 bg-primary border-b border-border flex items-center gap-3">
             <span className="text-xl">🎣</span>
             <div>
-              <p className="text-sm font-semibold text-foreground">Wodna Kraina</p>
-              <p className="text-xs text-foreground/50">Asystent łowiska</p>
+              <p className="text-sm font-semibold text-white">Wodna Kraina</p>
+              <p className="text-xs text-white/60">Asystent łowiska</p>
             </div>
           </div>
 

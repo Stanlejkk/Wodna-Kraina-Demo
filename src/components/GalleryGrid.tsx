@@ -74,10 +74,10 @@ export function GalleryGrid() {
                   </span>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
-                  <p className="text-xs text-accent font-medium uppercase tracking-wider">
+                  <p className="text-xs text-amber-300 font-medium uppercase tracking-wider">
                     {item.category}
                   </p>
-                  <p className="text-sm text-foreground font-medium mt-1">
+                  <p className="text-sm text-white font-medium mt-1">
                     {item.title}
                   </p>
                 </div>

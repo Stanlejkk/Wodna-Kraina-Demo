@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #080C06;
-  --foreground: #EDE8D8;
+  --background: #FFFFFF;
+  --foreground: #1A2B17;
   --primary: #1B5535;
   --primary-light: #27703F;
-  --accent: #C9A535;
-  --accent-light: #DABB4A;
-  --muted: #101408;
-  --border: #1C2818;
-  --card: #0C1208;
+  --accent: #96790F;
+  --accent-light: #B8941E;
+  --muted: #F0F4ED;
+  --border: #D4DDD0;
+  --card: #F7FAF6;
 }
 
 @theme inline {
@@ -150,7 +150,7 @@
 
   .card-hover:hover {
     transform: translateY(-4px) scale(1.01);
-    box-shadow: 0 0 30px rgba(27, 85, 53, 0.25), 0 0 60px rgba(201, 165, 53, 0.08);
+    box-shadow: 0 4px 20px rgba(27, 85, 53, 0.12), 0 2px 40px rgba(150, 121, 15, 0.06);
   }
 
   /* Water wave effect for hero */
