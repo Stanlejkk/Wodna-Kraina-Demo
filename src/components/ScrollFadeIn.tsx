@@ -33,7 +33,7 @@ export function ScrollFadeIn({ children, className, delay }: ScrollFadeInProps) 
   return (
     <div
       ref={ref}
-      className={cn("fade-in-up", className)}
+      className={cn("fade-in-up h-full", className)}
       style={delay ? { transitionDelay: `${delay}s` } : undefined}
     >
       {children}

@@ -10,7 +10,7 @@ export function LakeCard({ lake, index }: LakeCardProps) {
   return (
     <Link
       href="/oplaty"
-      className={`card-hover block p-6 rounded-xl border border-border bg-card/80 group stagger-${index + 1}`}
+      className={`card-hover flex flex-col h-full p-6 rounded-xl border border-border bg-card/80 group stagger-${index + 1}`}
     >
       {/* Header with gradient */}
       <div className="relative h-32 rounded-lg mb-4 overflow-hidden flex items-center justify-center"
@@ -27,7 +27,7 @@ export function LakeCard({ lake, index }: LakeCardProps) {
       <h3 className="font-heading text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">
         {lake.name}
       </h3>
-      <p className="text-sm text-foreground/60 mb-4">{lake.shortDescription}</p>
+      <p className="text-sm text-foreground/60 mb-4 flex-1">{lake.shortDescription}</p>
 
       <div className="flex flex-wrap gap-2">
         {lake.features.slice(0, 3).map((feature) => (
